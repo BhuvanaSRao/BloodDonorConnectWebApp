@@ -1,0 +1,54 @@
+Context:
+Set up your Java backend (Servlets/JSP or Spring Boot).
+Connect Java to MySQL (using JDBC).
+Build frontend pages (HTML/CSS/JS).
+Implement backend logic for registration, search, admin, etc.
+Test locally (Tomcat/Jetty for Java web apps).
+--------------------------------------------------------------
+1. Set up Github for Chatgpt in Visual Studio code
+2. Install Visual Studio Code IDE
+3. Instal JDK Version 24
+4. Set up Environment Variables
+   System Variables -> New -> JAVA_HOME -> Path -> C drive -> Program Files -> Java
+5. Create Folders and files in Visual Studio code
+
+NOTE : When you implement application using Java, Maven is mandatory because it is build automation tool used in java projects, it takes cares of all installations required for project.
+
+ What Each Folder/File Is For:
+src/main/java/: All your Java source code.
+
+controller/: Handles HTTP requests (e.g., register donor, search donor).
+model/: Defines data structures (e.g., Donor class).
+repository/: Interfaces for database operations.
+BloodDonorConnectApplication.java: Main entry point for your Spring Boot app.
+src/main/resources/: Non-Java resources.
+
+application.properties: Database connection info, app settings.
+static/: Your frontend files (HTML, CSS, JS).
+pom.xml: Maven configuration file. It lists all libraries your project needs (Spring Boot, MySQL, etc.).
+
+6. Download Maven : https://maven.apache.org/download.cgi  -> Binary zip archive -> 	apache-maven-3.9.11-bin.zip
+Paste the downloaded folder in C drive -> Program files
+Set Environment Variable ->  System Variables -> New -> MAVEN_HOME -> Path -> C drive -> Program Files -> apache-maven-3.9.11
+Set Path : C:\Program Files\apache-maven-3.9.11\bin -> OK
+
+7. Open command prompt -> go to your path -> (eg: D:\BHUVI\emergencyblooddonorconnect) (make sure your pom.xml file is in root folder)
+8. run command "mvn clean install"
+9. Install and configue MySQL : https://dev.mysql.com/downloads/installer/
+Go to C:\Program Files\MySQL\MySQL Server X.X\bin
+Add this path to your system Path environment variable.
+mysql -u root -p
+enter pwd
+run command "mvn clean install"
+run command "mvn spring-boot:run"
+mysql -u your_mysql_username -p
+SHOW DATABASES;
+USE your_database_name;
+mvn spring-boot:run -X
+
+
+
+
+
+
+
